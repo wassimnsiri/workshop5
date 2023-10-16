@@ -10,27 +10,24 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Gamerwassim"
+        android:theme="@style/Theme.GamerApp"
         tools:targetApi="31">
         <activity
-            android:name=".ActivityOtpValidation"
-            android:exported="false"/>
+            android:name=".HomeScreen"
+            android:exported="false" />
         <activity
-            android:name=".ActivityForgetPassword"
-            android:exported="false"/>
-        <activity
-            android:name=".ActivitySignUp"
-            android:exported="false"/>
-        <activity
-            android:name=".ActivityLogin"
+            android:name=".MainActivity"
             android:exported="true">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".Signup" />
+        <activity android:name=".ForgetPassword" />
+        <activity android:name=".OtpValidation" />
+        <activity android:name=".ResetPassword" />
     </application>
 
 </manifest>
